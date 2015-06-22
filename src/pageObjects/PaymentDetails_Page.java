@@ -14,7 +14,7 @@ public class PaymentDetails_Page extends BaseClass {
    	     super(driver);
    	    }
 	
-	 public static WebElement txt_Email(){
+	 public static WebElement txt_Email() throws Exception{
     	 element = null;
        	try{
        		element= driver.findElement(By.id("wpsc_checkout_form_9"));
@@ -26,7 +26,7 @@ public class PaymentDetails_Page extends BaseClass {
        	return element;
         }
 	 
-	 public static WebElement txt_FirstName(){
+	 public static WebElement txt_FirstName() throws Exception{
     	 element = null;
        	try{
        		element= driver.findElement(By.id("wpsc_checkout_form_2"));
@@ -38,7 +38,7 @@ public class PaymentDetails_Page extends BaseClass {
        	return element;
         }
 	 
-	 public static WebElement txt_LastName(){
+	 public static WebElement txt_LastName() throws Exception{
     	 element = null;
        	try{
        		element= driver.findElement(By.id("wpsc_checkout_form_3"));
@@ -50,7 +50,7 @@ public class PaymentDetails_Page extends BaseClass {
        	return element;
         }
 	 
-	 public static WebElement txt_Address(){
+	 public static WebElement txt_Address() throws Exception{
     	 element = null;
        	try{
        		element= driver.findElement(By.id("wpsc_checkout_form_4"));
@@ -62,7 +62,7 @@ public class PaymentDetails_Page extends BaseClass {
        	return element;
         }
 	 
-	 public static WebElement txt_City(){
+	 public static WebElement txt_City() throws Exception{
     	 element = null;
        	try{
        		element= driver.findElement(By.id("wpsc_checkout_form_5"));
@@ -74,7 +74,7 @@ public class PaymentDetails_Page extends BaseClass {
        	return element;
         }
 	 
-	 public static void drpdwn_Country(String sCountry){
+	 public static void drpdwn_Country(String sCountry) throws Exception{
     	 element = null;
        	try{
        		Select element= new Select(driver.findElement(By.id("wpsc_checkout_form_7")));
@@ -86,7 +86,7 @@ public class PaymentDetails_Page extends BaseClass {
        		}
         }
 	 
-	 public static WebElement txt_Phone(){
+	 public static WebElement txt_Phone() throws Exception{
     	 element = null;
        	try{
        		element= driver.findElement(By.id("wpsc_checkout_form_18"));
@@ -98,7 +98,7 @@ public class PaymentDetails_Page extends BaseClass {
        	return element;
         }
 	 
-	 public static WebElement chkbx_SameAsBillingAdd(){
+	 public static WebElement chkbx_SameAsBillingAdd() throws Exception{
     	 element = null;
        	try{
        		element= driver.findElement(By.id("shippingSameBilling"));
@@ -110,7 +110,7 @@ public class PaymentDetails_Page extends BaseClass {
        	return element;
         }
 	 
-	 public static WebElement btn_Purchase(){
+	 public static WebElement btn_Purchase() throws Exception{
     	 element = null;
        	try{
        		element= driver.findElement(By.xpath(".//*[@id='wpsc_shopping_cart_container']/form/div[4]/div/div/span/input"));

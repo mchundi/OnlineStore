@@ -14,7 +14,7 @@ public class ProductListing_Page extends BaseClass {
      public static class Product_1{
  
          
-    	 public static WebElement txt_Price(){
+    	 public static WebElement txt_Price() throws Exception{
         	 element = null;
            	try{
            		element= driver.findElement(By.xpath(".//*[@id='default_products_page_container']/div[3]/div[2]/form/div[1]/p[1]/span[2]"));
@@ -28,7 +28,7 @@ public class ProductListing_Page extends BaseClass {
             }
  
   
-         public static WebElement img_Product(){
+         public static WebElement img_Product() throws Exception{
         	 element = null;
           	try{
           		element= driver.findElement(By.xpath(".//*[@id='default_products_page_container']/div[3]/div[1]/a"));
@@ -54,7 +54,7 @@ public class ProductListing_Page extends BaseClass {
             }
  
  
-         public static WebElement btn_AddToCart(){
+         public static WebElement btn_AddToCart() throws Exception{
         	  element = null;
            	try{
            		element= driver.findElement(By.xpath(".//*[@id='default_products_page_container']/div[3]/div[2]/form/div[2]/div[1]/span/input"));
@@ -71,7 +71,7 @@ public class ProductListing_Page extends BaseClass {
 	public static class Product_2{
 	 
 	         
-		 public static WebElement txt_Price(){
+		 public static WebElement txt_Price() throws Exception{
 	    	 element = null;
 	       	try{
 	       		element= driver.findElement(By.xpath(".//*[@id='default_products_page_container']/div[4]/div[2]/form/div[1]/p[1]/span[2]"));
@@ -84,7 +84,7 @@ public class ProductListing_Page extends BaseClass {
 	        }
 	
 	
-	     public static WebElement img_Product(){
+	     public static WebElement img_Product() throws Exception{
 	    	 element = null;
 	      	try{
 	      		element= driver.findElement(By.xpath(".//*[@id='default_products_page_container']/div[4]/div[1]/a"));
@@ -110,7 +110,7 @@ public class ProductListing_Page extends BaseClass {
 	        }
 	
 	
-	     public static WebElement btn_AddToCart(){
+	     public static WebElement btn_AddToCart() throws Exception{
 	    	  element = null;
 	       	try{
 	       		element= driver.findElement(By.xpath(".//*[@id='default_products_page_container']/div[4]/div[2]/form/div[2]/div[1]/span/input"));
@@ -128,7 +128,7 @@ public class ProductListing_Page extends BaseClass {
 	public static class PopUpAddToCart{
 		 
 	    
-		 public static WebElement btn_GoToCart(){
+		 public static WebElement btn_GoToCart() throws Exception{
 	   	 element = null;
 	      	try{
 	      		element= driver.findElement(By.xpath(".//*[@id='fancy_notification_content']/a[1]"));
@@ -140,7 +140,7 @@ public class ProductListing_Page extends BaseClass {
 	      	return element;
 	       }
 		 
-		 public static WebElement btn_ContShopping(){
+		 public static WebElement btn_ContShopping() throws Exception{
 		   	 element = null;
 		      	try{
 		      		element= driver.findElement(By.xpath(".//*[@id='fancy_notification_content']/a[2]"));

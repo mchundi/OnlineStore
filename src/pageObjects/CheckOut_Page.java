@@ -14,7 +14,7 @@ public class CheckOut_Page extends BaseClass{
     	super(driver);
     	}
      
-	 public static WebElement txt_ProductPrice(){
+	 public static WebElement txt_ProductPrice() throws Exception{
     	 element = null;
        	try{
        		element= driver.findElement(By.xpath(".//*[@id='checkout_page_container']/div[1]/table/tbody/tr[2]/td[4]"));
@@ -26,7 +26,7 @@ public class CheckOut_Page extends BaseClass{
        	return element;
         }
 	 
-	 public static WebElement txt_ProductName(){
+	 public static WebElement txt_ProductName() throws Exception{
     	 element = null;
        	try{
        		element= driver.findElement(By.xpath(".//*[@id='checkout_page_container']/div[1]/table/tbody/tr[2]/td[2]/a"));
@@ -38,7 +38,7 @@ public class CheckOut_Page extends BaseClass{
        	return element;
         }
 	 
-	 public static WebElement btn_Continue(){
+	 public static WebElement btn_Continue() throws Exception{
     	 element = null;
        	try{
        		element= driver.findElement(By.xpath(".//*[@id='checkout_page_container']/div[1]/a/span"));
